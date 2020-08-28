@@ -18,6 +18,7 @@ int a,b,c,i,d=0;
 //		}
 		cout<<val.size()<<endl;
 		
+		
 	}
 	
 }
