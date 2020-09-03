@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){
-	
+
 	map<char,string>val;
 	
 	val['A'] = "2";
