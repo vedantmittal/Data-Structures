@@ -36,10 +36,10 @@ int main(){
 	
 	int a;
 	cin>>a;
+	cin.ignore();
     for(int j =0;j<a;j++){
 	    string s,value,str;
         char temp;
-        cin.ignore();
         getline(cin,s);
         int num = s.length();
         for(int i=0;i<num;i++){
@@ -50,7 +50,7 @@ int main(){
             else{
                 auto it = val.find(temp);
                 value = it->second;
-                str = str + value;
+                str = str + value; 
             }	
         }
 	    cout<<str<<endl;
