@@ -15,8 +15,6 @@ int main(){
     while(j<=k){
         float val = arr[j]+arr[k];
         if(val<=3.0){
-            cout<<"hi";
-
             ++count;
             j++;
             k--;
