@@ -44,16 +44,16 @@ int main() {
 }
 
 void MyStack ::push(int x) {
-    StackNode *temp = new StackNode(x);
-    temp->next = top;
-    top = temp;
+    StackNode* temp=new StackNode(x);
+    temp->next=top;
+    top=temp;
 }
 
 int MyStack ::pop() {
-    if(top == NULL){
-        return -1;
-    }
-    int val = top->data;
-    top = top->next;
-    return val;
+    if(!top) return -1;
+    StackNode* temp=top;
+    top=top->next;
+    int data=temp->data;
+    free(temp);
+    return data;
 }
