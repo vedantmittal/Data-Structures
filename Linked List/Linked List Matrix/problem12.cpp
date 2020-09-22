@@ -59,7 +59,6 @@ Node* constructLinkedMatrix(int mat[MAX][MAX], int n)
     return temp;
 
 }
-
 Node* constructLinkedMatrixnew(int mat[MAX][MAX], int i,int j,int n)
 {   
     struct Node *temp = new Node(mat[i][j]);
