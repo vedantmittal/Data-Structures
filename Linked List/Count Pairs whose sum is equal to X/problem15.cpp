@@ -1,4 +1,3 @@
-// { Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,7 +10,6 @@ struct Node {
         next = NULL;
     }
 };
-
 void append(struct Node** headRef, struct Node** tailRef, int newData) {
     struct Node* new_node = new Node(newData);
 
