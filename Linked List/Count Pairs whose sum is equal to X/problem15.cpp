@@ -28,10 +28,10 @@ void printList(struct Node* head) {
         cout << head->data << ' ';
         head = head->next;
     }
+
 }
 
 int countPairs(struct Node* head1, struct Node* head2, int x);
-
 int main() {
     int T;
     cin >> T;
@@ -55,7 +55,7 @@ int main() {
         cout << countPairs(head1, head2, x) << '\n';
     }
     return 0;
-}// } Driver Code Ends
+}
 
 int countPairs(struct Node* head1, struct Node* head2, int x) {
 	Node *temp1 = head1;
