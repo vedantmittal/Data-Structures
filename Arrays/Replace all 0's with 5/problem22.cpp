@@ -17,6 +17,7 @@ int convertFive(int n) {
 	string str= to_string(n);
     string w;
 	int val;
+    int count;
 	for(int i=0;i<str.length();i++){
         w = str[i];
 		val = stoi(w);
