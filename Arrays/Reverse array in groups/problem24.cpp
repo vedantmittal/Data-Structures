@@ -3,6 +3,7 @@ using namespace std;
 
 
 vector<long long> reverse(vector<long long> m,int w, int q){
+    long ved;
 	long long i=w;
 	long long j = q-1;
 	long long temp;
