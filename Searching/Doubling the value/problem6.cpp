@@ -1,4 +1,5 @@
-#include<iostream>
+#include <bits/stdc++.h>
+using namespace std;
 int main(){
     int a;
     cin>>a;
@@ -10,7 +11,6 @@ int main(){
             cin>>arr[i];
         }
         int temp = k;
-        int z;
         for(int i=0;i<n;i++){
             if(temp== arr[i]){
                 temp = 2*temp;
