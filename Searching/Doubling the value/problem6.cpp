@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
 int main(){
     int a;
@@ -16,6 +16,6 @@ int main(){
                 temp = 2*temp;
             }
         }
-        return temp; 
+        cout<<temp<<endl;
     }
 }
