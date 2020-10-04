@@ -5,23 +5,22 @@ class Solution{
 	public:
 	bool check_elements(int arr[], int n, int A, int B)
 	{
-        int temp =0;
-        map<int,int> val;
+        int temp = A;
+        int val = B-A+1;
+        set<int> num;
         for(int i=0;i<n;i++){
-            val[arr[i]]++;
+            num.insert(arr[i]);
         }
-        int count = B-A+1;
-        for(auto itr : val){
-            if(itr.first>A-1 || itr.first<B+1){
+        while(val--){
+            auto res = num.find(temp);
+            if(res!=num.end()){
                 ++temp;
             }
+            else{
+                return 0;
+            }
         }
-        if(temp == count){
-            return 1;
-        }
-        else{
-            return 0;
-        }
+        return 1;
 	}
 };
 	
