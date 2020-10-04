@@ -5,10 +5,10 @@ using namespace std;
 int main(){
     int a;
     cin>>a;
+    cin.ignore();
     while(a--){
         set<char> vow = {'a','e','i','o','u','A','E','I','O','U'};
         string s;
-        cin.ignore();
         getline(cin,s);
         int c1=0,sp=0;
         for(int i=0;i< s.length();i++){
