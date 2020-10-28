@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
  
 using namespace std;
-int binary_search(int arr[], int l, int h, int x);
+
 vector <int> countEleLessThanOrEqual(int arr1[], int arr2[], 
                              int m, int n);
 int main()
